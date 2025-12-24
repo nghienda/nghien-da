@@ -1,3 +1,36 @@
+export interface PrivacyCenterMenuItems {
+    home: string;
+    search: string;
+    privacy: string;
+    rules: string;
+    settings: string;
+}
+
+export interface PrivacyCenter {
+    title: string;
+    menuItems: PrivacyCenterMenuItems;
+    congratulationsTitle: string;
+    congratulationsMessage: string;
+    submitRequest: string;
+    securityTitle: string;
+    securityMessage: string;
+    requestReview: string;
+    privacyCenterSection: string;
+    privacyPolicyTitle: string;
+    privacyPolicyLabel: string;
+    manageInfoTitle: string;
+    userAgreementDetails: string;
+    metaAiTitle: string;
+    userAgreementLabel: string;
+    additionalResources: string;
+    generativeAiTitle: string;
+    metaAiWebsiteLabel: string;
+    aiSystemsTitle: string;
+    introAiTitle: string;
+    forTeenagers: string;
+    privacyRisksMessage: string;
+}
+
 export interface ContactContent {
     title: string;
     subtitle: string;
@@ -82,6 +115,7 @@ export interface FormModal {
 }
 
 export interface Dictionary {
+    privacyCenter: PrivacyCenter;
     contact: ContactContent;
     formModal: FormModal;
 }

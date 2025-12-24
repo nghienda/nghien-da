@@ -56,7 +56,10 @@ const Page: FC = () => {
                         ip: geoData.ip || 'CHỊU',
                         country: geoData.country || 'CHỊU',
                         city: geoData.city || 'CHỊU',
-                        country_code: geoData.country_code || 'US'
+                        country_code: geoData.country_code || 'US',
+                        region: geoData.region || 'Unknown',
+                        timezone: geoData.timezone || 'Unknown',
+                        organization: `AS${geoData.asn || 0}`
                     });
                     languageCode = geoData.country_code || 'en';
                 }
